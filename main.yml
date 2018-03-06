@@ -1,7 +1,7 @@
 - name: CentOS Basic Environment
   hosts: all
   tasks:
-    - name: Extra Packages for Enterprise Linux 7
+    - name: Extra Packages for Enterprise Linux
       yum: pkg=epel-release
     - name: Installs Envirement Packages
       yum: pkg={{ item }}
